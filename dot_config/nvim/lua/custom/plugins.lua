@@ -13,7 +13,11 @@ local plugins = {
         "eslint-lsp",
         "prettierd",
         "stylua",
+        "goimports",
+        "gofumpt",
+        "golines",
         "gopls",
+        "golangci-lint",
         "tailwindcss-language-server",
         "typescript-language-server",
       },
@@ -50,6 +54,14 @@ local plugins = {
         "css",
       }
       return opts
+    end,
+  },
+  {
+    "sindrets/diffview.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("diffview").setup()
     end,
   },
 }
