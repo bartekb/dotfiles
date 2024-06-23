@@ -1,0 +1,10 @@
+[core]
+	editor = nvim
+[user]
+	email = bartosz.bubacz@gmail.com
+	name = Bartosz Bubacz
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
