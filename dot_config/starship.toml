@@ -8,19 +8,9 @@ $hostname\
 $directory\
 $git_branch\
 $git_status \
-$python\
-$aws\
 $golang\
-$java\
 $nodejs\
-$rust\
 $ruby\
-$scala\
-$dart\
-$conda\
-$pijul_channel\
-$lua\
-$rlang\
 $package\
 $buf\
 $memory_usage\
@@ -96,32 +86,14 @@ deleted = ' '
 
 # ---
 
-[aws]
-symbol = "  "
-
 [buf]
 symbol = " "
-
-[c]
-symbol = " "
 
 [conda]
 symbol = " "
 
-[dart]
-symbol = " "
-
 [docker_context]
 symbol = " "
-
-[golang]
-symbol = " "
-
-[java]
-symbol = " "
-
-[lua]
-symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
@@ -136,21 +108,5 @@ symbol = " "
 [package]
 symbol = "󰏗 "
 
-[pijul_channel]
-symbol = " "
-
-[python]
-symbol = " "
-pyenv_version_name = true
-
 [ruby]
 symbol = " "
-
-[rlang]
-symbol = "󰟔 "
-
-[rust]
-symbol = " "
-
-[scala]
-symbol = " "
