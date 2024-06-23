@@ -26,7 +26,7 @@
         },
         {
             "type": "packages",
-            "format": "{} (pacman)",
+            "format": "{} pkgs installed",
             "key": " ├ 󰏖 ",
             "keyColor": "31",  
         },

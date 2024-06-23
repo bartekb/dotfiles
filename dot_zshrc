@@ -10,7 +10,7 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-if [ -f /usr/bin/fastfetch ]; then
+if [ -f /usr/bin/fastfetch ] || [ -f /opt/homebrew/bin/fastfetch ]; then
 	fastfetch -c ~/.config/fastfetch/groups.jsonc
 fi
 
