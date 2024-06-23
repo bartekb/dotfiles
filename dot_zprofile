@@ -1,6 +1,17 @@
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Added by `rbenv init` on pią, 21 cze 2024, 22:20:22 CEST
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
+OS="$(uname -s)"
+
+case "$OS" in
+    Darwin)
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        ;;
+    Linux)
+        eval "$(~/.rbenv/bin/rbenv init - zsh)"
+        ;;
+    *)
+        echo "Unsupported OS: $OS"
+        ;;
+esac
