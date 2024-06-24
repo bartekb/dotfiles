@@ -6,7 +6,11 @@ OS="$(uname -s)"
 
 case "$OS" in
     Darwin)
-        eval "$(/opt/homebrew/bin/brew shellenv)"
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+	export PATH="$PATH:/Users/be/Library/Application Support/JetBrains/Toolbox/scripts"
+	export PATH="$PATH:/Users/be/.dotnet/tools"
+	source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+	eval "$(rbenv init - zsh)"
         ;;
     Linux)
         eval "$(~/.rbenv/bin/rbenv init - zsh)"

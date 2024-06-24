@@ -1,4 +1,6 @@
 # Set the directory we want to store zinit and plugins
+export PATH="$PATH:/home/bb/.local/bin"
+
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -75,12 +77,9 @@ alias ls='eza -l --git --git-repos --header --hyperlink'
 alias vim='nvim'
 alias c='clear'
 
+source ~/.zprofile
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
-source ~/.zprofile
-
-export PATH="$PATH:/home/bb/.local/bin"
-
 eval "$(starship init zsh)"
